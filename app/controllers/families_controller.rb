@@ -1,7 +1,7 @@
 class FamiliesController < ApplicationController
 
   def new
-
+    @family = Family.new
   end
 
   def create
@@ -20,5 +20,5 @@ class FamiliesController < ApplicationController
   end
 
   private
-  
+
 end
