@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sitter_first_name: MyString
+  sitter_last_name: MyString
+  sitter_age: 1
+  city: MyString
+  sitter_email: MyString
+  sitter_phone_number: 1
+  availability: MyText
+
+two:
+  sitter_first_name: MyString
+  sitter_last_name: MyString
+  sitter_age: 1
+  city: MyString
+  sitter_email: MyString
+  sitter_phone_number: 1
+  availability: MyText

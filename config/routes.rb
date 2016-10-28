@@ -16,11 +16,12 @@ Rails.application.routes.draw do
   patch 'families/:family_id', to: 'families#update'
   delete 'families/:family_id', to: 'families#destroy'
 
+  # sitter profile routes
   get '/sitters/new', to: 'sitters#new', as: 'new_sitter'
   post '/sitters', to: 'sitters#create'
   get '/sitters/:sitter_id', to: 'sitters#show', as: 'sitter'
-  get '/sitters/:sitter_id/edit', to: 'sitters#edit', as 'edit_sitter'
+  get '/sitters/:sitter_id/edit', to: 'sitters#edit', as: 'edit_sitter'
   patch '/sitters/:sitter_id', to: 'sitters#update'
-  delete '/sitters/:sitter_id', to 'sitters#destroy'
+  delete '/sitters/:sitter_id', to: 'sitters#destroy'
 
 end
