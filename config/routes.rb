@@ -19,9 +19,9 @@ Rails.application.routes.draw do
   # sitter profile routes
   get '/sitters/new', to: 'sitters#new', as: 'new_sitter'
   post '/sitters', to: 'sitters#create'
-  get '/sitters/:sitter_id', to: 'sitters#show', as: 'sitter'
-  get '/sitters/:sitter_id/edit', to: 'sitters#edit', as: 'edit_sitter'
-  patch '/sitters/:sitter_id', to: 'sitters#update'
-  delete '/sitters/:sitter_id', to: 'sitters#destroy'
+  get '/sitters/:user_name', to: 'sitters#show', as: 'sitter'
+  get '/sitters/:user_name/edit', to: 'sitters#edit', as: 'edit_sitter'
+  patch '/sitters/:user_name', to: 'sitters#update'
+  delete '/sitters/:user_name', to: 'sitters#destroy'
 
 end
