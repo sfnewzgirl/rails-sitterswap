@@ -11,10 +11,10 @@ Rails.application.routes.draw do
   # family profile routes
   get '/families/new', to: 'families#new', as: 'new_family'
   post '/families', to: 'families#create'
-  get '/families:family_id', to: 'families#show', as: 'family'
-  get '/families/:family_id/edit', to: 'families#edit', as: 'edit_family'
-  patch 'families/:family_id', to: 'families#update'
-  delete 'families/:family_id', to: 'families#destroy'
+  get '/families/:family_name', to: 'families#show', as: 'family'
+  get '/families/:family_name/edit', to: 'families#edit', as: 'edit_family'
+  patch 'families/:family_name', to: 'families#update'
+  delete 'families/:family_name', to: 'families#destroy'
 
   # sitter profile routes
   get '/sitters/new', to: 'sitters#new', as: 'new_sitter'
