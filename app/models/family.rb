@@ -1,3 +1,3 @@
-class Family < ApplicationRecord
-  has_secure_password
+class Family < User
+
 end

@@ -1,3 +1,3 @@
-class Sitter < ApplicationRecord
-  has_secure_password
+class Sitter < User
+
 end
