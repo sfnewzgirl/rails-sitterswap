@@ -10,10 +10,10 @@
     <h3>Step 1: Are you a parent or a sitter?</h3>
     <hr>
     <div id="new-parent-button">
-      <%= button_to 'Parent', new_family_path(@user), :method => :get %>
+      <%= button_to 'Parent', new_family_path(@user), :method => :get, class: "btn btn-default"%>
     </div>
     <div id="new-sitter-button">
-      <%= button_to 'Siter', new_sitter_path(@user), :method => :get %>
+      <%= button_to 'Siter', new_sitter_path(@user), :method => :get, class: "btn btn-default" %>
     </div>
   </div>
 </div>
