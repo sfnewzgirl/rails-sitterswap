@@ -10,10 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161028215923) do
+ActiveRecord::Schema.define(version: 20161029050410) do
 
   create_table "families", force: :cascade do |t|
-    t.string   "family_name"
     t.string   "city"
     t.string   "parent_1_first_name"
     t.string   "parent_1_last_name"
@@ -43,7 +42,6 @@ ActiveRecord::Schema.define(version: 20161028215923) do
     t.string   "sitter_last_name"
     t.integer  "sitter_age"
     t.string   "sitter_city"
-    t.string   "sitter_email"
     t.integer  "sitter_phone_number"
     t.boolean  "contact_email"
     t.boolean  "contact_phone"
