@@ -10,18 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029050410) do
+ActiveRecord::Schema.define(version: 20161029054037) do
 
   create_table "families", force: :cascade do |t|
     t.string   "city"
     t.string   "parent_1_first_name"
     t.string   "parent_1_last_name"
     t.string   "parent_1_email"
-    t.integer  "parent_1_phone_number"
     t.string   "parent_2_first_name"
     t.string   "parent_2_last_name"
     t.string   "parent_2_email"
-    t.string   "parent_2_phone_number"
     t.integer  "num_of_children"
     t.text     "names_of_children"
     t.boolean  "newborn"
@@ -35,6 +33,8 @@ ActiveRecord::Schema.define(version: 20161029050410) do
     t.boolean  "contact_phone"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
+    t.string   "parent_1_phone_number"
+    t.string   "parent_2_phone_number"
   end
 
   create_table "sitters", force: :cascade do |t|
@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 20161029050410) do
     t.string   "sitter_last_name"
     t.integer  "sitter_age"
     t.string   "sitter_city"
-    t.integer  "sitter_phone_number"
     t.boolean  "contact_email"
     t.boolean  "contact_phone"
     t.text     "availability"
@@ -55,6 +54,7 @@ ActiveRecord::Schema.define(version: 20161029050410) do
     t.boolean  "adolescent"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.string   "sitter_phone_number"
   end
 
   create_table "users", force: :cascade do |t|
