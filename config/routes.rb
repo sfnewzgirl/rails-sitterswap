@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/about', to: 'welcome#about', as: 'about_page'
   get '/login', to: 'sessions#new'
   post '/sessions', to: 'sessions#create'
-  get '/logout', to: 'sessions#destroy'
+  get '/logout', to: 'sessions#destroy', as: 'logout'
 
   # family profile routes
   get '/families/new', to: 'families#new', as: 'new_family'

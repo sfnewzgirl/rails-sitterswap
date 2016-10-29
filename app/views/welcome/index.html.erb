@@ -1,6 +1,19 @@
 <div class="container-fluid">
-  <div class="col-md-6 offset-2">
+  <div class="col-md-8 offset-2">
     <h1>SitterSwap</h1>
     <h2>The best sitter is one that's been tested by a trusted friend.</h2>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="col-md-8 offset-4">
+    <h2>Become a member of SitterSwap</h2>
+    <h3>Step 1: Are you a parent or a sitter?</h3>
+    <hr>
+    <div id="new-parent-button">
+      <%= button_to 'Parent', new_family_path(@user), :method => :get %>
+    </div>
+    <div id="new-sitter-button">
+      <%= button_to 'Siter', new_sitter_path(@user), :method => :get %>
+    </div>
   </div>
 </div>
