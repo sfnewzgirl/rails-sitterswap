@@ -4,12 +4,18 @@
 
 <h3>Step 2: Create your profile.</h3>
 <hr>
-  <div class="container-fluid">
-    <div class="col-md-8 offset-4">
-      <% form_for @family do |f| %>
-      
+  <%= form_for @family do |f| %>
+    <p>
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </p>
 
+    <p>
+      <%= f.label :password %><br>
+      <%= f.text_field :password %>
+    </p>
 
-      <% end %>
-    </div>
-  </div>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>

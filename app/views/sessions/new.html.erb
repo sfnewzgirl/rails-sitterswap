@@ -1,4 +1,16 @@
+Log in
+<%= form_for :login do |f| %>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
 
+  <p>
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </p>
 
-email
-password
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
